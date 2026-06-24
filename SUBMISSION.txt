@@ -2,19 +2,18 @@ SUBMISSION — Decision Brief Generator
 =====================================
 
 CHALLENGE: Option 1 — Decision Brief Generator
-TIME SPENT: ~90 minutes
 
-----------------------------------------------------------------------
+
 PUBLIC LINKS
-----------------------------------------------------------------------
-- Live app:    <add Streamlit Cloud URL after deploying>
-- Source code: <add GitHub repo URL>
+
+- Live app:    https://decision-brief-umar.streamlit.app/
+- Source code: https://github.com/UMARKHALIDD/decision-brief-generator
 - Dataset:     https://github.com/Wunmi-O/Superstore/blob/master/SampleSuperstore.csv
                (Sample Superstore — 9,994 US retail orders, public, no PII)
 
-----------------------------------------------------------------------
-100-WORD SUMMARY
-----------------------------------------------------------------------
+
+100-WORD SUMMARY:
+
 Executives don't read dashboards; they need pre-digested decisions.
 Decision Brief Generator ingests any CSV, computes a statistical
 profile in pandas (totals, top/bottom segments per dimension,
@@ -27,9 +26,9 @@ deterministic computation and qualitative reasoning eliminates
 hallucinated metrics — every number in the brief is one the system
 actually calculated. Demoed on the Sample Superstore dataset.
 
-----------------------------------------------------------------------
-KEY DESIGN CHOICE
-----------------------------------------------------------------------
+
+KEY DESIGN CHOICE:
+
 The LLM never sees raw rows. It only sees a deterministic
 statistical profile computed in pandas. This guarantees that every
 number in the final brief is one the system actually calculated —
@@ -41,7 +40,7 @@ The prompt then forces:
 - Mandatory risk flags (what the data cannot tell you)
 - Strict JSON schema (parseable, downloadable)
 
-----------------------------------------------------------------------
+
 EXAMPLE OUTPUT (on Sample Superstore data, outcome = Profit)
 ----------------------------------------------------------------------
 Headline:
