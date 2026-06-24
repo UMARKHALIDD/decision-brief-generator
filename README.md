@@ -2,8 +2,8 @@
 
 > Turns raw CSV data into an executive-ready decision brief — headline, three findings, two-to-three recommended actions, and risk flags — with numbers that are guaranteed to be correct.
 
-**Live demo:** _<add your Streamlit Cloud URL here after deploying>_
-**Repo:** _<add your GitHub URL here>_
+**Live demo:** _https://decision-brief-umar.streamlit.app/_
+**Repo:** _(https://github.com/UMARKHALIDD/decision-brief-generator)_
 **Sample dataset:** [Sample Superstore (US retail, 9,994 orders)](https://github.com/Wunmi-O/Superstore/blob/master/SampleSuperstore.csv)
 
 ---
@@ -55,7 +55,7 @@ The LLM is constrained to:
 ### Locally
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/UMARKHALIDD/decision-brief-generator.git
 cd decision-brief-generator
 pip install -r requirements.txt
 export OPENAI_API_KEY=sk-...
@@ -95,4 +95,4 @@ Open the URL Streamlit prints (usually `http://localhost:8501`). Either click "L
 
 ---
 
-Built as a take-home demo. Time invested: ~90 minutes.
+Built as a take-home demo. 
