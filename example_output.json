@@ -1,0 +1,39 @@
+{
+  "headline": "An 18.7% unprofitable-order rate driven by Tables sub-category losses and Central-region underperformance is suppressing a healthy 12.5% overall margin.",
+  "key_findings": [
+    {
+      "claim": "The Tables sub-category is a structural loss-maker, losing $17,725 across 319 orders at an average loss of $55.57 per order — by far the worst sub-category and over 5x the loss of the next-worst (Bookcases at -$3,472).",
+      "supporting_metric": "Sub_Category bottom_segments: Tables total=-17725.59, mean=-55.57, count=319"
+    },
+    {
+      "claim": "The Central region underperforms dramatically with a $17.09 mean profit per order versus $33.85 in West and $32.14 in East — roughly half the per-order profitability of the leading regions despite comparable order volume (2,323 orders).",
+      "supporting_metric": "Region: Central mean=17.09 vs West mean=33.85, East mean=32.14"
+    },
+    {
+      "claim": "Discounting is actively destroying margin, with a -0.219 correlation between Discount and Profit — a meaningfully negative relationship suggesting current discount practices are not yielding offsetting volume gains.",
+      "supporting_metric": "Correlations: Discount → Profit = -0.219; 18.72% of all 9,994 orders are unprofitable"
+    }
+  ],
+  "recommended_actions": [
+    {
+      "action": "Pause or restructure pricing on the Tables sub-category — either raise list prices, cap maximum discount at 0%, or discontinue the lowest-margin SKUs within Tables — before next quarter's promotional cycle.",
+      "rationale": "Tables alone accounts for $17.7K in losses; eliminating or fixing this single sub-category would lift total profit by ~6% with no other change.",
+      "priority": "high"
+    },
+    {
+      "action": "Audit Central-region operations (shipping costs, sales-rep discounting authority, customer mix) to identify why mean order profit is ~50% lower than peer regions, then pilot a corrective action in a single Central state.",
+      "rationale": "Central has the volume to matter (2,323 orders) but the lowest mean profit; closing half the gap to West would add ~$39K to annual profit.",
+      "priority": "high"
+    },
+    {
+      "action": "Cap discounts at 20% across all categories except Technology, and require manager approval for anything above that.",
+      "rationale": "The negative Discount → Profit correlation suggests current discount levels exceed the point where they generate offsetting volume; a hard cap is a low-cost, easy-to-implement guardrail.",
+      "priority": "medium"
+    }
+  ],
+  "risk_flags": [
+    "The dataset contains no time dimension in the analysed columns, so we cannot tell whether the Tables losses or Central-region weakness are recent trends, structural, or seasonal — a finding that should be verified against a time-series cut before acting.",
+    "Correlation between Discount and Profit (-0.219) is real but moderate; it does not prove causation. Heavily-discounted segments may also be those with structurally lower margins for reasons unrelated to the discount itself (e.g., product mix).",
+    "The dataset is single-country (United States only) and shows no customer-acquisition or repeat-purchase context — recommendations may not generalise to other markets, and the impact of pricing actions on customer retention cannot be assessed from this data alone."
+  ]
+}
